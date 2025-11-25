@@ -1,22 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Rock Paper Scissors</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Rock Paper Scissors Game</h1>
-    <p>Choose your move:</p>
-    <button id="reset">Reset Game</button>
-<button id="rock">Rock</button>
-<button id="paper">Paper</button>
-<button id="scissors">Scissors</button>
+    <div class="container">
+        <h1>Rock Paper Scissors</h1>
+        
+        <div class="score-container">
+            <div class="score" id="player-score">Player: 0</div>
+            <div class="score" id="computer-score">Computer: 0</div>
+        </div>
+        
+        <div class="choices">
+            <button id="rock" class="choice-btn">Rock</button>
+            <button id="paper" class="choice-btn">Paper</button>
+            <button id="scissors" class="choice-btn">Scissors</button>
+        </div>
+        
+        <div id="result" class="result"></div>
+        
+        <div id="winner" class="winner"></div>
 
-<div id="results"></div>
-
-<button id="restart" style="display: none;">Restart Game</button>
+        <!-- NEW: Restart Button -->
+        <button id="restart-btn" class="restart-btn">Restart Game</button>
+    </div>
 
     <script src="index.js"></script>
 </body>
