@@ -43,7 +43,7 @@ h1 {
     font-size: 1rem;
     border: none;
     border-radius: 5px;
-    background-color: #4CAF50;
+    background-color: #4CAF50; /* Green */
     color: white;
     cursor: pointer;
     transition: background-color 0.3s;
@@ -64,6 +64,10 @@ h1 {
     font-weight: bold;
     margin-top: 1rem;
     color: #e74c3c;
+}
+
+/* NEW: Styles for the restart button */
+.restart-btn {
     margin-top: 2rem;
     padding: 0.8rem 1.5rem;
     font-size: 1rem;
